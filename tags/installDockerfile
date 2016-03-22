@@ -30,7 +30,7 @@ RUN yum -y install python-setuptools
 RUN easy_install supervisor
 
 # Todo better split file
-ADD scripts/supervisord.conf /etc/supervisord.conf
+ADD ../scripts/supervisord.conf /etc/supervisord.conf
 
 # Expose port HTTP for the service
 EXPOSE 80
