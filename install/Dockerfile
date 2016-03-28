@@ -9,7 +9,6 @@ MAINTAINER jeffrey Brite <jeff@c4tech.com>
 # Update CentOS
 RUN yum -y update
 
-RUN yum -y install wget
 # Install Centreon Repository
 RUN yum -y install http://yum.centreon.com/standard/3.0/stable/noarch/RPMS/ces-release-3.0-1.noarch.rpm
 
