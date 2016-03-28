@@ -15,7 +15,9 @@ RUN yum -y install http://yum.centreon.com/standard/3.0/stable/noarch/RPMS/ces-r
 # Install centreon
 RUN yum -y install centreon-base-config-centreon-engine centreon
 # Install Widgets
-RUN yum -y install centreon-widget-graph-monitoring centreon-widget-host-monitoring centreon-widget-service-monitoring centreon-widget$
+RUN yum -y install centreon-widget-graph-monitoring centreon-widget-host-monitoring \
+        centreon-widget-service-monitoring centreon-widget-hostgroup-monitoring \
+        centreon-widget-servicegroup-monitoring
 
 # Dirty - need to figure out how to have it set by an environmental var or something.
 RUN sed -i "s/;date.timezone =.*/date.timezone = America\/Chicago/" /etc/php.ini
