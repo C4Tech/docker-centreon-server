@@ -6,7 +6,4 @@ RUN yum -y install centreon-poller-centreon-engine
 
 # Install ssh
 RUN yum -y install openssh-server openssh-client
-CMD chown -R centreon /var/spool/centreon/.ssh
-CMD chmod 0700 /var/spool/centreon/.ssh
-CMD if [ ! -f /var/spool/centreon/.ssh/id_rsa ]; then su centreon -c 'ssh-keygen -t rsa -f /var/spool/centreon/.ssh/id_rsa -q -N ""'; fi
-CMD cp /var/spool/centreon/.ssh/id_rsa /var/spool/centreon/.ssh/authorized_keys
+
