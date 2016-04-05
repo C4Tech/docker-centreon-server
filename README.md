@@ -13,6 +13,9 @@ Howto
 * delete container
 * create a new contrainer without "install tage"
 * setup volumes on container with the centreon.conf.php and conf.pm
+* setup a volume for /var/spool/centreon/.ssh/
+* create a ssh rsa key there. ssh-keygen
+* copy id_rsa.pub to authorized_keys so that the "server" can ssh into itself to manage the "poller"
 
 TODOs
 * create a better howto
