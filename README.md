@@ -26,6 +26,7 @@ TODOs
 * create a centreon server image without a pollor
 * create a centreon pollor image
 * improve "install" image
+* have to figure out a way to have uploaded images saved between contain removes
 
 *my docker-compose*
 NOTE: I use a nginx-proxy with letsencrypt docker container to handle the ssl. see c4tech/nginx-proxy-ldap-auth and jrcs/letsencrypt-nginx-proxy-companion for more information on that
