@@ -1,0 +1,8 @@
+* Clean up supervisord.conf. It's just a copy of the installer supervisor file which probably allows things that are irrelvant on a poller.
+* consider creating a base image for the installer, production and poller to all use to simplify maintinance and build process.
+* update howto
+
+draft howto (I have not tested this yet, will update when I do.)
+* use tag "poller"
+* add ssh authorized key volume
+* setup on centreon server
