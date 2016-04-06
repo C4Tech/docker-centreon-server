@@ -1,8 +1,3 @@
-# TODO
-# need to create an imstall image and a prodcution image
-# figure out where the volumes go
-
-
 FROM centos:centos6.6
 MAINTAINER jeffrey Brite <jeff@c4tech.com>
 
