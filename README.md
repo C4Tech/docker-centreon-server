@@ -31,7 +31,7 @@ TODOs
 *my docker-compose*
 NOTE: I use a nginx-proxy with letsencrypt docker container to handle the ssl. see c4tech/nginx-proxy-ldap-auth and jrcs/letsencrypt-nginx-proxy-companion for more information on that
 
-`centreon-db:
+```centreon-db:
   image: mariadb
   expose:
     - 3306
@@ -53,4 +53,4 @@ centreon:
     - ./centreon/data/dotssh/:/var/spool/centreon/.ssh/
   env_file:
     - ./centreon/centreon.env
-  restart: always`
+  restart: always```
