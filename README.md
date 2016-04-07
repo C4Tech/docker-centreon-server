@@ -15,7 +15,7 @@ Howto
       and used docker exec commands to copy to to the volume after. locations are 
       /etc/centreon/centreon.conf.php and /etc/centreon/conf.pm
 * delete container
-* create a new contrainer without "install tage"
+* create a new contrainer without "install" tag
 * setup volumes on container with the centreon.conf.php and conf.pm
 * setup a volume for /var/spool/centreon/.ssh/
 * create a ssh rsa key there. ssh-keygen
